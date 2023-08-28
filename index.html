@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Performance-Aware Multi-Instrument Synthesis using Conditional Diffusion Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ben Maman</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Meinard Müller</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Amit H. Bermano</a><sup>1</sup>,</span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Tel Aviv University<br><sup>2</sup>International Audio Laboratories Erlangen, Germany<br>
+                      <!-- Conferance name and year</span> -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section"> -->
+  <!-- <div class="container is-widescreen"> -->
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+	  <p>
+	  Generating Multi-instrument music from symblic music representations is a central task in Music Information Retrieval (MIR). Current literature tackling this important task still struggles with performance quality and control. In this work we propose a multi-instrument music synthesis framework that significantly improves both aforementioned aspects. Building on state-of-the-art diffusion-based music generative models, we first demonstrate how contemporary off-the-shelf transcription is mature enough to guide music generation of unprecedented quality and realism. Then, we introduce performance-based conditioning, a simple tool enabling precise control, indicating the generative model to synthesize music with style and timbre of specific instruments, taken from specific performances. Our prototype is evaluated using uncurated performances with diverse instrumentation for training, and achieves state-of-the-art FAD realism scores, while allowing novel timbre and style control.
+	  </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+<!-- </section> -->
+
+
+<section class="section">
+  <div class="container is-widescreen">
+    <h2 class="title is-3">Synthesized Samples</h2>
+    We provide generated samples of diverse instruments and ensembles, using different performance conditions. In each of the following pairs, the upper is the performance generated by our model, and the lower is the input MIDI,
+    synthesized using a simple standard synthesizer. See next section for the effect of performance conditioning.
+    <br><br>
+    <div class="columns is-centered">
+      <div class="column">
+          <h2 class="title is-7">Brahms Piano Concerto 1</h2>
+          <audio controls>
+          <source src="static/long_samples/brahms_concerto_beethoven_concertos.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="brahms_concerto_beethoven_concertos_MIDI" controls>
+          <source src="static/long_samples/brahms_concerto_beethoven_concertos_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_concerto_beethoven_concertos_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Bach Orchestral Suite 4 Overture</h2>
+          <audio controls>
+          <source src="static/long_samples/bach_orchestral_suite4_overture_bach_orchestral_suite3.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="bach_orchestral_suite4_overture_bach_orchestral_suite3_MIDI" controls>
+          <source src="static/long_samples/bach_orchestral_suite4_overture_bach_orchestral_suite3_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_orchestral_suite4_overture_bach_orchestral_suite3_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Beethoven Piano Concerto 5</h2>
+          <audio controls>
+          <source src="static/long_samples/beethoven_piano_concerto5A_beethoven_piano_concertos.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI" controls>
+          <source src="static/long_samples/beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Bach Harpsichord Concerto 2</h2>
+          <audio controls>
+          <source src="static/long_samples/bach_harpsichord_concerto_bach_violin_sonatas.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="bach_harpsichord_concerto_bach_violin_sonatas_MIDI" controls>
+          <source src="static/long_samples/bach_harpsichord_concerto_bach_violin_sonatas_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_harpsichord_concerto_bach_violin_sonatas_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="columns is-centered">
+      <div class="column">
+          <h2 class="title is-7">Grieg Peer Gynt Part 3</h2>
+          <audio controls>
+          <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="grieg_peer_gynt_p3_brahms_symphony3_MIDI" controls>
+          <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("grieg_peer_gynt_p3_brahms_symphony3_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Grieg Peer Gynt Part 1</h2>
+          <audio controls>
+          <source src="static/long_samples/grieg_peer_gynt_tchaikovsky_swan_lake.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="grieg_peer_gynt_tchaikovsky_swan_lake_MIDI" controls>
+          <source src="static/long_samples/grieg_peer_gynt_tchaikovsky_swan_lake_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("grieg_peer_gynt_tchaikovsky_swan_lake_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Mozart Symphony 40 Part 4</h2>
+          <audio controls>
+          <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
+          <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("mozart_symphony40_p4_brahms_haydn_variations_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Brahms Hungarian Dance 5</h2>
+          <audio controls>
+          <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
+          <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="columns is-centered">
+      <div class="column">
+          <h2 class="title is-7">Mozart String Quartet</h2>
+          <audio controls>
+          <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="mozart_string_quartet_beethoven_piano_trios_MIDI" controls>
+          <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("mozart_string_quartet_beethoven_piano_trios_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Bach English Suite 3</h2>
+          <audio controls>
+          <source src="static/long_samples/bach_english_suite3_rousset_goldberg_variations.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="bach_english_suite3_rousset_goldberg_variations_MIDI" controls>
+          <source src="static/long_samples/bach_english_suite3_rousset_goldberg_variations_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_english_suite3_rousset_goldberg_variations_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Bach Toccata and Fugue</h2>
+          <audio controls>
+          <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI" controls>
+          <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI");
+          audio.volume = 0.5;
+          </script>
+      </div>
+
+      <div class="column">
+          <h2 class="title is-7">Jobim Felicidad</h2>
+          <audio controls>
+          <source src="static/long_samples/felicidad_sor_studies19.mp3", type="audio/mpeg">
+          </audio>
+          <audio id="felicidad_sor_studies19_MIDI" controls>
+          <source src="static/long_samples/felicidad_sor_studies19_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("felicidad_sor_studies19_MIDI");
+          audio.volume = 0.8;
+          </script>
+      </div>
+    </div>
+
+    <br>
+
+  <!-- </div>
+</section> -->
+
+<!-- <section class="section">
+  <div class="container is-widescreen"> -->
+    <h2 class="title is-3">Performance Conditioning</h2>
+    <p>
+    In the following, we demonstrate the effect of performance conditioning. The same MIDI is synthesized with different performance conditions.
+    In each pair of rows, the top row is from the synthesized performance, and the bottom row is from the conditioning performance. For a fair comparison, the segment from the conditioning performance is vocoded with the Soundstream vocoder.
+    </p>
+    <br>
+
+    <b>Bach Invention 8 - Different Harpsichords</b><br>
+    In this example we provide the same MIDI of Bach's 8th Invention synthesized with 8 different harpsichords. The input MIDI is the exact same,
+    and the different timbre is obtained using different performance conditions. For each sample, we provide a short excerpt from the conditioning performance.
+    In the last 2 samples, the timbre of the harpsichord is extracted from a mixture with violin.
+    <br><br>
+    <div class="columns is-centered">
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_english.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_english_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+
+
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_wtce.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_wtce_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_goldberg.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_goldberg_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_wtcf.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_wtcf_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+    </div>
+
+    <br>
+    <div class="columns is-centered">
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_wtcg.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_wtcg_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_wtc2.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_wtc2_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_vhB.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Condition (mixture with violin):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_vhB_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_vhA.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition (mixture with violin):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/harpsichord_vhA_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+    </div>
+
+    <br>
+
+    <!-- <h2 class="title is-6">Bach Harpsichord Concerto 2</h2> -->
+
+
+
+    <b>Orchestra - Beethoven Symphony 6 (Pastoral)</b><br>
+    In this example we provide the same MIDI of Beethoven's 6th symphony synthesized with 8 different orchestras. As in the previous examples, the MIDI condition is identical,
+    while the different sound is achieved using performance conditioning. Excerpts from the conditioning performances are provided.
+    <br><br>
+    <div class="columns is-centered">
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_egmont.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_egmont_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_mozart36.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_mozart36_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_beethoven4.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_beethoven4_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_haydn.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_haydn_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+    </div>
+
+    <br>
+    <div class="columns is-centered">
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_brahms3.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_brahms3_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_eroica.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_eroica_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_mozart38.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_mozart38_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+
+
+
+      <div class="column">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_scottish.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/pastoral_scottish_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+
+
+    </div>
+
+    <br>
+
+    <b>Church Organ</b><br>
+    Bach's Toccata and Fugue synthesized on 2 different church organs:
+    <br><br>
+    <div class="columns is-centered is-multiline is-mobile">
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/performance_conditioning/organ_5253.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/organ_5253_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/organ_5251.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/organ_5251_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+    </div>
+
+    <br>
+
+    <b>Violin</b><br>
+    Paganini's Capriccio on 6 different violins:
+    <br><br>
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/performance_conditioning/violin_bwv1003.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/violin_bwv1003_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/violin_trios.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition (mixture):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/violin_trios_vocoded.mp3", type="audio/mpeg">
+          </audio>
+          <br><br>
+          <audio controls>
+          <source src="static/performance_conditioning/violin_vs.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition (mixture):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/violin_vs_vocoded.mp3", type="audio/mpeg">
+          </audio>
+
+      </div>
+
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/violin_vhA.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition (mixture):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/violin_vhA_vocoded.mp3", type="audio/mpeg">
+          </audio>
+          <br><br>
+          <audio controls>
+          <source src="static/performance_conditioning/violin_bwv1004.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/violin_bwv1004_vocoded.mp3", type="audio/mpeg">
+          </audio>
+
+      </div>
+
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/violin_vhB.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition (mixture):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/violin_vhB_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+
+    </div>
+
+    <b>Guitar</b><br>
+    Kansas' Dust In The Wind synthesized on 3 different guitars:
+    <br><br>
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/performance_conditioning/guitar_17sor29.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/guitar_17sor29_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/guitar_2419sor31.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/guitar_2419sor31_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/guitar_1201sor6.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition:
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/guitar_1201sor6_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+    </div>
+
+    <br>
+
+    <b>Violin and Piano/Harpsichord</b><br>
+    Bach's 2nd Concerto for Orchestra and Harpsichord with different violins and harpsichords/piano:
+    <br><br>
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/performance_conditioning/concerto3.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Condition (Cello, Violin & Piano):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/concerto3_target_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/concerto2.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
+          <br>
+          Condition (Violin & Harpsichord):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/concerto2_target_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          <!-- <br>
+          Synthesized:
+          <br> -->
+          <audio controls>
+          <source src="static/performance_conditioning/concerto1.mp3", type="audio/mpeg">
+          </audio>
+          <!-- <br> -->
+          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
+          <br>
+          Condition (Violin & Harpsichord):
+          <br>
+          <audio controls>
+          <source src="static/performance_conditioning/concerto1_target_vocoded.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+    </div>
+
+    <br>
+
+    <h2 class="title is-3">Comparisson</h2>
+    <p>
+    Our main comparison is with Hawthorne et al. (2022). Although we use the same T5 backbone, there are 2 main differences between the models:
+    <br>
+    (1) We train on real data alone (~58 hours), including orchestral symphonies, while Hawthorne et al. train on mainly synthetic data (~1500 hours).
+    <br>
+    (2) We incorporate performance conditioning.
+    <br> Provided here are samples for comparison:
+    </p>
+    <br>
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+          <br>
+          Hawthorne et al:
+          <br>
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/compare/pastoral1_hawthorne.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Ours:
+          <br>
+          <audio controls>
+          <source src="static/compare/pastoral1_ours.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          <br>
+          Hawthorne et al:
+          <br>
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/compare/pastoral2_hawthorne.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Ours:
+          <br>
+          <audio controls>
+          <source src="static/compare/pastoral2_ours.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          <br>
+          Hawthorne et al:
+          <br>
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/compare/toccata_hawthorne.mp3", type="audio/mpeg">
+          </audio>
+          <!-- Condition - Beethoven Piano Trios: -->
+          <br>
+          Ours:
+          <br>
+          <audio controls>
+          <source src="static/compare/toccata_ours.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+    </div>
+
+    <br>
+
+
+  </div>
+
+
+
+</section>
+
+
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
