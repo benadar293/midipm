@@ -1,5 +1,5 @@
 # Academic Project Page Template
-This is an academic paper project page template.
+Project Page for the paper: Maman et al., "Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis"
 
 
 Example project pages built using this template are:
