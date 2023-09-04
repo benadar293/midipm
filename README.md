@@ -1,4 +1,4 @@
-# Academic Project Page Template
+# Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis
 Project Page for the paper: Maman et al., "Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis"
 
 
