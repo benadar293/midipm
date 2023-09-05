@@ -1,5 +1,5 @@
 # Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis
-[Project Page](https://benadar293.github.io/midipm) for our paper: Maman et al., "Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis"
+[Project Page](https://benadar293.github.io/midipm) for our paper: Maman et al., "Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis", 2023
 
 ![alt text](static/images/overview.PNG "Overview")
 
