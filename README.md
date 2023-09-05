@@ -1,5 +1,7 @@
 # Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis
-[Project Page](https://benadar293.github.io/midipm) for the paper: Maman et al., "Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis"
+[Project Page](https://benadar293.github.io/midipm) for our paper: Maman et al., "Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis"
+
+![alt text](overview.png "Overview")
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
