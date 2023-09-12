@@ -156,7 +156,7 @@
     <br>
     For each sample, we provide the input MIDI (upper), and our generated sample (lower). Samples generated with the same performance condition are marked with the same color.
     <br>
-    <b>See next sections for a demonstration of performance conditioning effect, and for a comparison with Hawthorne et al.</b>
+    <b>See next sections for a demonstration of the performance conditioning effect, and for a comparison with Hawthorne et al.</b>
     <br>
     <b> All generated samples in this page were generated with the same T5 model from the paper, and vocoded with Soundstream.</b>
     <br><br>
@@ -1469,10 +1469,65 @@
     <br>
 
 
+    <h2 class="title is-3">Vocoder Quality</h2>
+    <p>
+    The Soundstream vocoder's quality is an upper bound to the quality of our generated performances.
+    <br>
+    Provided here are two examples demonstrating the vocoder's quality.
+    <br>
+    We show for each example the original segment, and its vocoded version (i.e., reconstructed from the mel spectrogram).
+    </p>
+    <br>
+    <small><small>
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+          Original:
+          <br>
+          <audio controls>
+          <source src="static/vocoder/Beethoven_SymphonyNo.3Eroica_target.flac", type="audio/mpeg">
+          </audio>
+          <br>
+          Soundstream vocoder:
+          <br>
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/vocoder/Beethoven_SymphonyNo.3Eroica_target_soundstream.flac", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          Original:
+          <br>
+          <audio controls>
+          <source src="static/vocoder/Brahms_SymphonyNo.2inDMajor_target.flac", type="audio/mpeg">
+          </audio>
+          <br>
+          Soundstream vocoder:
+          <br>
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/vocoder/Brahms_SymphonyNo.2inDMajor_target_soundstream.flac", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          Original:
+          <br>
+          <audio controls>
+          <source src="static/vocoder/Brahms_SymphonyNo.3inFMajor_target.flac", type="audio/mpeg">
+          </audio>
+          <br>
+          Soundstream vocoder:
+          <br>
+          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
+          <audio controls>
+          <source src="static/vocoder/Brahms_SymphonyNo.3inFMajor_target_soundstream.flac", type="audio/mpeg">
+          </audio>
+      </div>
+    </div>
+    </small></small>
+    <br>
   </div>
-
-
-
 </section>
 
 
