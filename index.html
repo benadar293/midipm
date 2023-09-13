@@ -44,16 +44,6 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
-  <!-- <style>
-  #buttonDiv {
-    /* display: none; */
-    width: 100%;
-    padding: 50px 0;
-    text-align: center;
-    margin-top: 20px;
-  }
-  </style> -->
-
 </head>
 <body>
 
@@ -165,11 +155,11 @@
     <h2 class="title is-3">Synthesized Samples</h2>
     We provide generated samples of diverse instruments and ensembles, using different performance conditions. Orchestral sound is obtained by simply using the 'Orchestra' instrument in the input MIDI, and does not require many violin channels etc.
     <br>
-    For each sample, we provide the input MIDI (upper), and our generated sample (lower). Samples generated with the same performance condition are marked with the same color.
+    For each sample, we provide the input MIDI (upper), and our generated sample (lower). <b>Samples generated with the same performance condition are marked with the same color</b>.
     <br>
     <b>See next sections for a demonstration of the performance conditioning effect, and for a comparison with Hawthorne et al.</b>
     <br>
-    <b> All generated samples in this page were generated with the same T5 model from the paper, and vocoded with Soundstream.</b>
+    All generated samples in this page were generated with the same T5 model from the paper, and vocoded with Soundstream.
     <br><br>
     <div class="columns is-centered">
       <div class="column">
@@ -177,7 +167,7 @@
           <small><small>MIDI: <b>Brahms Piano Concerto 1</b>
           <br>Performance Condition: <b><span style="color:MidnightBlue">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="brahms_concerto_beethoven_concertos_MIDI" controls>
           <source src="static/long_samples/brahms_concerto_beethoven_concertos_MIDI.mp3", type="audio/mpeg">
           </audio>
@@ -185,7 +175,7 @@
           var audio = document.getElementById("brahms_concerto_beethoven_concertos_MIDI");
           audio.volume = 0.5;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/brahms_concerto_beethoven_concertos.mp3", type="audio/mpeg">
           </audio>
@@ -196,7 +186,7 @@
           <small><small>MIDI: <b>Bach 4th Orchestral Suite Overture</b>
           <br>Performance Condition: <b><span style="color:Maroon">Bach 3rd Orchestral Suite (unknown performer)</span></b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="bach_orchestral_suite4_overture_bach_orchestral_suite3_MIDI" controls>
           <source src="static/long_samples/bach_orchestral_suite4_overture_bach_orchestral_suite3_MIDI.mp3", type="audio/mpeg">
           </audio>
@@ -204,7 +194,7 @@
           var audio = document.getElementById("bach_orchestral_suite4_overture_bach_orchestral_suite3_MIDI");
           audio.volume = 0.5;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/bach_orchestral_suite4_overture_bach_orchestral_suite3.mp3", type="audio/mpeg">
           </audio>
@@ -212,10 +202,10 @@
       </div>
 
       <div class="column">
-          <small><small>MIDI: <b>Bach Harpsichord Concerto 2</b>
-          <br>Performance Condition: <b>Bach Sonatas for Violin & Harpsichord (unknown performer)</b>
+          <small><small>MIDI: <b>Bach 2nd Harpsichord Concerto</b>
+          <br>Performance Condition: <b><span style="color:Indigo">Bach Sonatas for Violin & Harpsichord (unknown performer)</span></b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="bach_harpsichord_concerto_bach_violin_sonatas_MIDI" controls>
           <source src="static/long_samples/bach_harpsichord_concerto_bach_violin_sonatas_MIDI.mp3", type="audio/mpeg">
           </audio>
@@ -223,28 +213,12 @@
           var audio = document.getElementById("bach_harpsichord_concerto_bach_violin_sonatas_MIDI");
           audio.volume = 0.5;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/bach_harpsichord_concerto_bach_violin_sonatas.mp3", type="audio/mpeg">
           </audio>
           </small></small>
 
-          <!-- <small><small>MIDI: <b>Beethoven Piano Concerto 5</b>
-          <br>Performance Condition: <b>Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</b>
-          <br>
-          Input MIDI:
-          <audio id="beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI" controls>
-          <source src="static/long_samples/beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/beethoven_piano_concerto5A_beethoven_piano_concertos.mp3", type="audio/mpeg">
-          </audio>
-          </small></small> -->
       </div>
 
       <div class="column">
@@ -252,7 +226,7 @@
         <!-- <br>Performance Condition: <b><span style="color:Purple">Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</span></b> -->
         <br>Performance Condition: <b>Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</b>
         <br>
-        Input MIDI:
+        Input MIDI:<br>
         <audio id="grieg_peer_gynt_tchaikovsky_swan_lake_MIDI" controls>
         <source src="static/long_samples/grieg_peer_gynt_tchaikovsky_swan_lake_MIDI.mp3", type="audio/mpeg">
         </audio>
@@ -260,7 +234,7 @@
         var audio = document.getElementById("grieg_peer_gynt_tchaikovsky_swan_lake_MIDI");
         audio.volume = 0.5;
         </script>
-        Ours:
+        <br>Ours:<br>
         <audio controls>
         <source src="static/long_samples/grieg_peer_gynt_tchaikovsky_swan_lake.mp3", type="audio/mpeg">
         </audio>
@@ -276,7 +250,7 @@
           <small><small>MIDI: <b>Beethoven Piano Concerto 5</b>
           <br>Performance Condition: <b><span style="color:MidnightBlue">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI" controls>
           <source src="static/long_samples/beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI.mp3", type="audio/mpeg">
           </audio>
@@ -284,7 +258,7 @@
           var audio = document.getElementById("beethoven_piano_concerto5A_beethoven_piano_concertos_MIDI");
           audio.volume = 0.5;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/beethoven_piano_concerto5A_beethoven_piano_concertos.mp3", type="audio/mpeg">
           </audio>
@@ -295,143 +269,49 @@
         <small><small>MIDI: <b>Bach 1st Orchestral Suite Overture</b>
         <br>Performance Condition: <b><span style="color:Maroon">Bach 3rd Orchestral Suite (unknown performer)</span></b>
         <br>
-        Input MIDI:
+        Input MIDI:<br>
         <audio controls>
         <source src="static/long_samples/bach_orchestral_suite1_overture_midi.mp3", type="audio/mpeg">
         </audio>
-        Ours:
+        <br>Ours:<br>
         <audio controls>
         <source src="static/long_samples/bach_orchestral_suite1_overture_orchestral_suite_3.mp3", type="audio/mpeg">
         </audio>
         </small></small>
-          <!-- <small><small>MIDI: <b>Grieg Peer Gynt Part 3</b>
-          <br>Performance Condition: <b>Czech Symphony Orchestra playing Brahms 3rd Symphony</b>
-          <br>
-          Input MIDI:
-          <audio id="grieg_peer_gynt_p3_brahms_symphony3_MIDI" controls>
-          <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("grieg_peer_gynt_p3_brahms_symphony3_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3.mp3", type="audio/mpeg">
-          </audio>
-          </small></small> -->
-          <!-- <small><small>MIDI: <b>Grieg Peer Gynt Part 1</b>
-          <br>Performance Condition: <b>Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</b>
-          <br>
-          Input MIDI:
-          <audio id="grieg_peer_gynt_tchaikovsky_swan_lake_MIDI" controls>
-          <source src="static/long_samples/grieg_peer_gynt_tchaikovsky_swan_lake_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("grieg_peer_gynt_tchaikovsky_swan_lake_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/grieg_peer_gynt_tchaikovsky_swan_lake.mp3", type="audio/mpeg">
-          </audio>
-          </small></small> -->
+      </div>
+
+      <div class="column">
+        <small><small>MIDI: <b>Bach 1st Harpsichord Concerto</b>
+        <br>Performance Condition: <b><span style="color:Indigo">Bach Sonatas for Violin & Harpsichord (unknown performer)</span></b>
+        <br>
+        Input MIDI:
+        <br>
+        <audio controls>
+        <source src="static/long_samples/bach_harpsichord_concerto_1_3_bach_violin_sonatas_MIDI.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours:
+        <br>
+        <audio controls>
+        <source src="static/long_samples/bach_harpsichord_concerto_1_3_bach_violin_sonatas.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
       </div>
 
       <div class="column">
           <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
-          <br>Performance Condition: <b><span style="color:Indigo">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b>
+          <br>Performance Condition: <b><span style="color:SeaGreen">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
           <source src="static/long_samples/pastoral_midi.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/pastoral_haydn_variations.mp3", type="audio/mpeg">
           </audio>
           </small></small>
       </div>
-
-      <div class="column">
-          <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b>
-          <br>Performance Condition: <b><span style="color:Indigo">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b>
-          <br>
-          Input MIDI:
-          <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
-          <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("mozart_symphony40_p4_brahms_haydn_variations_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-          <!-- <small><small>MIDI: <b>Rodrigo Concierto de Aranjuez</b>
-          <br>Performance Condition: <b><span style="color:Purple">Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</span></b>
-          <br>
-          Input MIDI:
-          <audio controls>
-          <source src="static/long_samples/aranjuez_midi.mp3", type="audio/mpeg">
-          </audio>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/aranjuez_swan_lake.mp3", type="audio/mpeg">
-          </audio>
-          </small></small> -->
-      </div>
-        <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b>
-        <br>Performance Condition: <b>Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</b>
-        <br>
-        Input MIDI:
-        <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
-        <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations_MIDI.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("mozart_symphony40_p4_brahms_haydn_variations_MIDI");
-        audio.volume = 0.5;
-        </script>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations.mp3", type="audio/mpeg">
-        </audio>
-        </small></small> -->
-        <!-- <small><small>MIDI: <b>Grieg Peer Gynt Part 3</b>
-        <br>Performance Condition: <b>Czech Symphony Orchestra playing Brahms 3rd Symphony</b>
-        <br>
-        Input MIDI:
-        <audio id="grieg_peer_gynt_p3_brahms_symphony3_MIDI" controls>
-        <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3_MIDI.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("grieg_peer_gynt_p3_brahms_symphony3_MIDI");
-        audio.volume = 0.5;
-        </script>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3.mp3", type="audio/mpeg">
-        </audio>
-        </small></small> -->
-          <!-- <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
-          <br>Performance Condition: <b>Trio Élégiaque playing Beethoven's Piano Trios</b>
-          <br>
-          Input MIDI:
-          <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
-          <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
-          </audio>
-          </small></small> -->
-      <!-- </div> -->
     </div>
 
     <!-- <br> -->
@@ -442,7 +322,7 @@
           <small><small>MIDI: <b>Mozart String Quartet</b>
           <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="mozart_string_quartet_beethoven_piano_trios_MIDI" controls>
           <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
           </audio>
@@ -450,35 +330,18 @@
           var audio = document.getElementById("mozart_string_quartet_beethoven_piano_trios_MIDI");
           audio.volume = 0.5;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios.mp3", type="audio/mpeg">
           </audio>
           </small></small>
       </div>
-      <!-- <div class="column">
-        <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
-        <br>Performance Condition: <b>Czech Symphony Orchestra<br>playing Beethoven's Coriolan Overture</b>
-        <br>
-        Input MIDI:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan_midi.mp3", type="audio/mpeg">
-        </audio>
-        <br>
-        Ours:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div> -->
 
       <div class="column">
           <small><small>MIDI: <b>Bach 3rd English Suite Prelude</b>
           <br>Performance Condition: <b>Christophe Rousset playing Bach's Goldberg Variations</b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="bach_english_suite3_rousset_goldberg_variations_MIDI" controls>
           <source src="static/long_samples/bach_english_suite3_rousset_goldberg_variations_MIDI.mp3", type="audio/mpeg">
           </audio>
@@ -486,7 +349,7 @@
           var audio = document.getElementById("bach_english_suite3_rousset_goldberg_variations_MIDI");
           audio.volume = 0.5;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/bach_english_suite3_rousset_goldberg_variations.mp3", type="audio/mpeg">
           </audio>
@@ -497,7 +360,7 @@
           <small><small>MIDI: <b>Bach's Toccata and Fugue in D Minor</b>
           <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI" controls>
           <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI.mp3", type="audio/mpeg">
           </audio>
@@ -505,7 +368,7 @@
           var audio = document.getElementById("bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI");
           audio.volume = 0.5;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B.mp3", type="audio/mpeg">
           </audio>
@@ -513,48 +376,24 @@
       </div>
 
       <div class="column">
-          <small><small>MIDI: <b>Jobim's Felicidad</b>
-          <br>Performance Condition: <b>Fernando Sor's 24 Studies No.19 Op.31</b>
+          <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b>
+          <br>Performance Condition: <b><span style="color:SeaGreen">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b>
           <br>
-          Input MIDI:
-          <audio id="felicidad_sor_studies19_MIDI" controls>
-          <source src="static/long_samples/felicidad_sor_studies19_MIDI.mp3", type="audio/mpeg">
+          Input MIDI:<br>
+          <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
+          <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations_MIDI.mp3", type="audio/mpeg">
           </audio>
           <script>
-          var audio = document.getElementById("felicidad_sor_studies19_MIDI");
-          audio.volume = 0.8;
+          var audio = document.getElementById("mozart_symphony40_p4_brahms_haydn_variations_MIDI");
+          audio.volume = 0.5;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
-          <source src="static/long_samples/felicidad_sor_studies19.mp3", type="audio/mpeg">
+          <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations.mp3", type="audio/mpeg">
           </audio>
           </small></small>
       </div>
     </div>
-
-    <!-- <div class="columns is-centered">
-      <div class="column">
-        <small><small>MIDI: <b>Arajuez</b>
-        <br>Performance Condition: <b>Swan Lake</b>
-        <br>
-        Input MIDI:
-        <audio controls>
-        <source src="static/long_samples/aranjuez_swan_lake.mp3", type="audio/mpeg">
-        </audio>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/aranjuez_midi.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div>
-    <div> -->
-
-
-
-
-
-
-
 
     <script>
     function myFunction() {
@@ -590,51 +429,15 @@
 
 
     <div class="columns is-centered">
-      <!-- <div class="column">
-        <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
-        <br>Performance Condition: <b>Czech Symphony Orchestra<br>playing Beethoven's Coriolan Overture</b>
-        <br>
-        Input MIDI:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan_midi.mp3", type="audio/mpeg">
-        </audio>
-        <br>
-        Ours:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div> -->
-      <!-- <div class="column">
-          <small><small>MIDI: <b>Mozart String Quartet</b>
-          <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
-          <br>
-          Input MIDI:
-          <audio id="mozart_string_quartet_beethoven_piano_trios_MIDI" controls>
-          <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("mozart_string_quartet_beethoven_piano_trios_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div> -->
-
       <div class="column">
           <small><small>MIDI: <b>Gershwin's Rhapsody in Blue</b>
           <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio controls>
           <source src="static/long_samples/rhapsody_2_midi_beethoven_trios.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/rhapsody_2_beethoven_trios.mp3", type="audio/mpeg">
           </audio>
@@ -645,7 +448,7 @@
         <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
         <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
         <br>
-        Input MIDI:
+        Input MIDI:<br>
         <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
         <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
         </audio>
@@ -653,116 +456,18 @@
         var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
         audio.volume = 0.5;
         </script>
-        Ours:
+        <br>Ours:<br>
         <audio controls>
         <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-        <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b>
-        <br>Performance Condition: <b><span style="color:Indigo">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b>
-        <br>
-        Input MIDI:
-        <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
-        <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations_MIDI.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("mozart_symphony40_p4_brahms_haydn_variations_MIDI");
-        audio.volume = 0.5;
-        </script>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations.mp3", type="audio/mpeg">
-        </audio>
-        </small></small> -->
-        <!-- <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
-        <br>Performance Condition: <b>Trio Élégiaque playing Beethoven's Piano Trios</b>
-        <br>
-        Input MIDI:
-        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
-        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
-        audio.volume = 0.5;
-        </script>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
-        </audio>
-        </small></small> -->
-          <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b>
-          <br>Performance Condition: <b>Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</b>
-          <br>
-          Input MIDI:
-          <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
-          <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("mozart_symphony40_p4_brahms_haydn_variations_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/mozart_symphony40_p4_brahms_haydn_variations.mp3", type="audio/mpeg">
-          </audio>
-          </small></small> -->
-          <!-- <small><small>MIDI: <b>Bach's Toccata and Fugue in D Minor</b>
-          <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b>
-          <br>
-          Input MIDI:
-          <audio id="bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI" controls>
-          <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B.mp3", type="audio/mpeg">
-          </audio>
-          </small></small> -->
-      </div>
-
-      <div class="column">
-        <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
-        <br>Performance Condition: <b>Czech Symphony Orchestra<br>playing Beethoven's Coriolan Overture</b>
-        <br>
-        Input MIDI:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan_midi.mp3", type="audio/mpeg">
-        </audio>
-        <br>
-        Ours:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
         </audio>
         </small></small>
       </div>
 
       <div class="column">
-        <small><small>MIDI: <b>Grieg Peer Gynt Part 3</b>
-        <br>Performance Condition: <b>Czech Symphony Orchestra playing Brahms 3rd Symphony</b>
-        <br>
-        Input MIDI:
-        <audio id="grieg_peer_gynt_p3_brahms_symphony3_MIDI" controls>
-        <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3_MIDI.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("grieg_peer_gynt_p3_brahms_symphony3_MIDI");
-        audio.volume = 0.5;
-        </script>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-          <!-- <small><small>MIDI: <b>Jobim's Felicidad</b>
+          <small><small>MIDI: <b>Jobim's Felicidad</b>
           <br>Performance Condition: <b>Fernando Sor's 24 Studies No.19 Op.31</b>
           <br>
-          Input MIDI:
+          Input MIDI:<br>
           <audio id="felicidad_sor_studies19_MIDI" controls>
           <source src="static/long_samples/felicidad_sor_studies19_MIDI.mp3", type="audio/mpeg">
           </audio>
@@ -770,87 +475,36 @@
           var audio = document.getElementById("felicidad_sor_studies19_MIDI");
           audio.volume = 0.8;
           </script>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/long_samples/felicidad_sor_studies19.mp3", type="audio/mpeg">
           </audio>
-          </small></small> -->
+          </small></small>
+      </div>
+
+      <div class="column">
+        <small><small>MIDI: <b>Grieg Peer Gynt Part 3</b>
+        <br>Performance Condition: <b>Czech Symphony Orchestra playing Brahms 3rd Symphony</b>
+        <br>
+        Input MIDI:<br>
+        <audio id="grieg_peer_gynt_p3_brahms_symphony3_MIDI" controls>
+        <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3_MIDI.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("grieg_peer_gynt_p3_brahms_symphony3_MIDI");
+        audio.volume = 0.5;
+        </script>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/long_samples/grieg_peer_gynt_p3_brahms_symphony3.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
       </div>
     </div>
 
     <!-- end button -->
     </div>
     <!-- end end button -->
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <br> -->
-
-    <!-- <div class="columns is-centered">
-
-
-
-      <div class="column">
-        <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
-        <br>Performance Condition: <b>Czech Symphony Orchestra<br>playing Beethoven's Coriolan Overture</b>
-        <br>
-        Input MIDI:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan_midi.mp3", type="audio/mpeg">
-        </audio>
-        <br>
-        Ours:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-          <small><small>MIDI: <b>Concerto Aranjuez</b>
-          <br>Performance Condition: <b>Richard Bonynge & National<br>
-            Phil. Orchestra playing Tchaikovsky's Swan Lake</b>
-          <br>
-          Input MIDI:
-          <br>
-          <audio controls>
-          <source src="static/long_samples/aranjuez_midi.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Ours:
-          <br>
-          <audio controls>
-          <source src="static/long_samples/aranjuez_swan_lake.mp3", type="audio/mpeg">
-          </audio>
-          </small></small> -->
-      <!-- </div>
-    </div> -->
-
-    <!-- <div class="columns is-centered">
-      <div class="column">
-        <small><small>MIDI: <b>Arajuez</b>
-        <br>Performance Condition: <b>Swan Lake</b>
-        <br>
-        Input MIDI:
-        <audio controls>
-        <source src="static/long_samples/aranjuez_swan_lake.mp3", type="audio/mpeg">
-        </audio>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/aranjuez_midi.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div>
-    <div> -->
-
     <br>
 
 
@@ -895,7 +549,7 @@
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_goldberg_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_goldberg.mp3", type="audio/mpeg">
           </audio>
@@ -908,7 +562,7 @@
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_wtce_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_wtce.mp3", type="audio/mpeg">
           </audio>
@@ -919,33 +573,20 @@
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_english_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_english.mp3", type="audio/mpeg">
           </audio>
           <br>
       </div>
 
-      <!-- <div class="column">
-          Performance Condition:
-          <audio controls>
-          <source src="static/performance_conditioning/harpsichord_goldberg_vocoded.mp3", type="audio/mpeg">
-          </audio>
-          Ours:
-          <audio controls>
-          <source src="static/performance_conditioning/harpsichord_goldberg.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
-      <!-- </small></small> -->
-
-      <!-- <small><small> -->
       <div class="column">
           Performance Condition:
           <br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_wtcf_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_wtcf.mp3", type="audio/mpeg">
           </audio>
@@ -960,7 +601,7 @@
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_wtcg_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_wtcg.mp3", type="audio/mpeg">
           </audio>
@@ -972,7 +613,7 @@
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_wtc2_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_wtc2.mp3", type="audio/mpeg">
           </audio>
@@ -983,7 +624,7 @@
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_vhB_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_vhB.mp3", type="audio/mpeg">
           </audio>
@@ -994,7 +635,7 @@
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_vhA_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/harpsichord_vhA.mp3", type="audio/mpeg">
           </audio>
@@ -1021,7 +662,7 @@
           <audio controls>
           <source src="static/performance_conditioning/pastoral_egmont_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/pastoral_egmont.mp3", type="audio/mpeg">
           </audio>
@@ -1032,7 +673,7 @@
           <audio controls>
           <source src="static/performance_conditioning/pastoral_mozart36_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/pastoral_mozart36.mp3", type="audio/mpeg">
           </audio>
@@ -1058,7 +699,7 @@
           <audio controls>
           <source src="static/performance_conditioning/pastoral_haydn_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/pastoral_haydn.mp3", type="audio/mpeg">
           </audio>
@@ -1069,7 +710,7 @@
           <audio controls>
           <source src="static/performance_conditioning/pastoral_brahms3_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/pastoral_brahms3.mp3", type="audio/mpeg">
           </audio>
@@ -1156,7 +797,7 @@
           <audio controls>
           <source src="static/performance_conditioning/organ_5253_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/organ_5253.mp3", type="audio/mpeg">
           </audio>
@@ -1167,7 +808,7 @@
           <audio controls>
           <source src="static/performance_conditioning/organ_5251_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/organ_5251.mp3", type="audio/mpeg">
           </audio>
@@ -1215,7 +856,7 @@
           <audio controls>
           <source src="static/performance_conditioning/violin_vs_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/violin_vs.mp3", type="audio/mpeg">
           </audio>
@@ -1226,7 +867,7 @@
           <audio controls>
           <source src="static/performance_conditioning/violin_vhB_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/violin_vhB.mp3", type="audio/mpeg">
           </audio>
@@ -1240,7 +881,7 @@
           <audio controls>
           <source src="static/performance_conditioning/violin_vhA_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/violin_vhA.mp3", type="audio/mpeg">
           </audio>
@@ -1250,23 +891,13 @@
 
       </div>
 
-      <!-- <div class="column is-one-quarter">
-          Performance Condition (mixture):
-          <audio controls>
-          <source src="static/performance_conditioning/violin_vhB_vocoded.mp3", type="audio/mpeg">
-          </audio>
-          Ours:
-          <audio controls>
-          <source src="static/performance_conditioning/violin_vhB.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
 
       <div class="column is-one-quarter">
         Performance Condition:
         <audio controls>
         <source src="static/performance_conditioning/violin_bwv1004_vocoded.mp3", type="audio/mpeg">
         </audio>
-        Ours:
+        <br>Ours:<br>
         <audio controls>
         <source src="static/performance_conditioning/violin_bwv1004.mp3", type="audio/mpeg">
         </audio>
@@ -1291,7 +922,7 @@
           <audio controls>
           <source src="static/performance_conditioning/guitar_17sor29_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/guitar_17sor29.mp3", type="audio/mpeg">
           </audio>
@@ -1303,7 +934,7 @@
           <audio controls>
           <source src="static/performance_conditioning/guitar_2419sor31_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/guitar_2419sor31.mp3", type="audio/mpeg">
           </audio>
@@ -1317,7 +948,7 @@
           <audio controls>
           <source src="static/performance_conditioning/guitar_1201sor6_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/guitar_1201sor6.mp3", type="audio/mpeg">
           </audio>
@@ -1344,7 +975,7 @@
           <audio controls>
           <source src="static/performance_conditioning/concerto3_target_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/concerto12_3_trios.mp3", type="audio/mpeg">
           </audio>
@@ -1361,7 +992,7 @@
           <audio controls>
           <source src="static/performance_conditioning/concerto2_target_vocoded.mp3", type="audio/mpeg">
           </audio>
-          Ours:
+          <br>Ours:<br>
           <audio controls>
           <source src="static/performance_conditioning/concerto12_3_bach_violin_sonatas.mp3", type="audio/mpeg">
           </audio>
