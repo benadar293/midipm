@@ -43,6 +43,17 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <!-- <style>
+  #buttonDiv {
+    /* display: none; */
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  </style> -->
+
 </head>
 <body>
 
@@ -423,7 +434,187 @@
       <!-- </div> -->
     </div>
 
+    <!-- <br> -->
     <br>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
+        <br>Performance Condition: <b>Czech Symphony Orchestra<br>playing Beethoven's Coriolan Overture</b>
+        <br>
+        Input MIDI:
+        <br>
+        <audio controls>
+        <source src="static/long_samples/pastoral_p5_coriolan_midi.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours:
+        <br>
+        <audio controls>
+        <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+        <!-- <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
+        <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
+        <br>
+        Input MIDI:
+        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
+        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
+        audio.volume = 0.5;
+        </script>
+        Ours:
+        <audio controls>
+        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
+        </audio>
+        </small></small> -->
+        <!-- <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
+        <br>Performance Condition: <b>Czech Symphony Orchestra playing Beethoven's Coriolan Overture</b>
+        <br>
+        Input MIDI:
+        <audio controls>
+        <source src="static/long_samples/pastoral_p5_coriolan_midi.mp3", type="audio/mpeg">
+        </audio>
+        Ours:
+        <audio controls>
+        <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
+        </audio>
+        </small></small> -->
+
+        <!-- <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
+        <br>Performance Condition: <b>Trio Élégiaque playing Beethoven's Piano Trios</b>
+        <br>
+        Input MIDI:
+        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
+        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
+        audio.volume = 0.5;
+        </script>
+        Ours:
+        <audio controls>
+        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
+        </audio>
+        </small></small> -->
+      </div>
+
+      <div class="column">
+          <small><small>MIDI: <b>Bach 3rd English Suite Prelude</b>
+          <br>Performance Condition: <b>Christophe Rousset playing Bach's Goldberg Variations</b>
+          <br>
+          Input MIDI:
+          <audio id="bach_english_suite3_rousset_goldberg_variations_MIDI" controls>
+          <source src="static/long_samples/bach_english_suite3_rousset_goldberg_variations_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_english_suite3_rousset_goldberg_variations_MIDI");
+          audio.volume = 0.5;
+          </script>
+          Ours:
+          <audio controls>
+          <source src="static/long_samples/bach_english_suite3_rousset_goldberg_variations.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <div class="column">
+          <small><small>MIDI: <b>Bach's Toccata and Fugue in D Minor</b>
+          <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b>
+          <br>
+          Input MIDI:
+          <audio id="bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI" controls>
+          <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI");
+          audio.volume = 0.5;
+          </script>
+          Ours:
+          <audio controls>
+          <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <div class="column">
+          <small><small>MIDI: <b>Jobim's Felicidad</b>
+          <br>Performance Condition: <b>Fernando Sor's 24 Studies No.19 Op.31</b>
+          <br>
+          Input MIDI:
+          <audio id="felicidad_sor_studies19_MIDI" controls>
+          <source src="static/long_samples/felicidad_sor_studies19_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("felicidad_sor_studies19_MIDI");
+          audio.volume = 0.8;
+          </script>
+          Ours:
+          <audio controls>
+          <source src="static/long_samples/felicidad_sor_studies19.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+    </div>
+
+    <!-- <div class="columns is-centered">
+      <div class="column">
+        <small><small>MIDI: <b>Arajuez</b>
+        <br>Performance Condition: <b>Swan Lake</b>
+        <br>
+        Input MIDI:
+        <audio controls>
+        <source src="static/long_samples/aranjuez_swan_lake.mp3", type="audio/mpeg">
+        </audio>
+        Ours:
+        <audio controls>
+        <source src="static/long_samples/aranjuez_midi.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+      </div>
+    <div> -->
+
+
+
+
+
+
+
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("buttonDiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    // function myFunction() {
+    //         $("#buttonDiv").toggle();
+    //     }
+    }
+    </script>
+    <center>
+    <button onclick="myFunction()" style="height:56px;width:175px;
+                                          border-radius: 8px;
+                                          font-size:140%;
+                                          color: white;
+                                          /* padding: 15px 32px; */
+                                          margin: 2px 2px;
+                                          background-color:#4CAF50; /* Green */
+                                          border: none;
+                                          cursor: pointer;">
+    <!-- More<br>Samples -->
+    More Samples
+    </button>
+    </center>
+    <div id="buttonDiv" style="display:none">
+    <!-- end button -->
+    <!-- </div> -->
+    <br>
+
 
     <div class="columns is-centered">
       <div class="column">
@@ -579,148 +770,9 @@
       </div>
     </div>
 
-    <br>
-
-    <div class="columns is-centered">
-      <div class="column">
-        <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
-        <br>Performance Condition: <b>Czech Symphony Orchestra<br>playing Beethoven's Coriolan Overture</b>
-        <br>
-        Input MIDI:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan_midi.mp3", type="audio/mpeg">
-        </audio>
-        <br>
-        Ours:
-        <br>
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-        <!-- <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
-        <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
-        <br>
-        Input MIDI:
-        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
-        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
-        audio.volume = 0.5;
-        </script>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
-        </audio>
-        </small></small> -->
-        <!-- <small><small>MIDI: <b>Beethoven 6th Symphony (Pastoral)</b>
-        <br>Performance Condition: <b>Czech Symphony Orchestra playing Beethoven's Coriolan Overture</b>
-        <br>
-        Input MIDI:
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan_midi.mp3", type="audio/mpeg">
-        </audio>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
-        </audio>
-        </small></small> -->
-
-        <!-- <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
-        <br>Performance Condition: <b>Trio Élégiaque playing Beethoven's Piano Trios</b>
-        <br>
-        Input MIDI:
-        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
-        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
-        audio.volume = 0.5;
-        </script>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
-        </audio>
-        </small></small> -->
-      </div>
-
-      <div class="column">
-          <small><small>MIDI: <b>Bach 3rd English Suite Prelude</b>
-          <br>Performance Condition: <b>Christophe Rousset playing Bach's Goldberg Variations</b>
-          <br>
-          Input MIDI:
-          <audio id="bach_english_suite3_rousset_goldberg_variations_MIDI" controls>
-          <source src="static/long_samples/bach_english_suite3_rousset_goldberg_variations_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("bach_english_suite3_rousset_goldberg_variations_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/bach_english_suite3_rousset_goldberg_variations.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div>
-
-      <div class="column">
-          <small><small>MIDI: <b>Bach's Toccata and Fugue in D Minor</b>
-          <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b>
-          <br>
-          Input MIDI:
-          <audio id="bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI" controls>
-          <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("bach_toccata_and_fugue_bach_trio_sonata_1B_MIDI");
-          audio.volume = 0.5;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/bach_toccata_and_fugue_bach_trio_sonata_1B.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div>
-
-      <div class="column">
-          <small><small>MIDI: <b>Jobim's Felicidad</b>
-          <br>Performance Condition: <b>Fernando Sor's 24 Studies No.19 Op.31</b>
-          <br>
-          Input MIDI:
-          <audio id="felicidad_sor_studies19_MIDI" controls>
-          <source src="static/long_samples/felicidad_sor_studies19_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("felicidad_sor_studies19_MIDI");
-          audio.volume = 0.8;
-          </script>
-          Ours:
-          <audio controls>
-          <source src="static/long_samples/felicidad_sor_studies19.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div>
+    <!-- end button -->
     </div>
-
-    <!-- <div class="columns is-centered">
-      <div class="column">
-        <small><small>MIDI: <b>Arajuez</b>
-        <br>Performance Condition: <b>Swan Lake</b>
-        <br>
-        Input MIDI:
-        <audio controls>
-        <source src="static/long_samples/aranjuez_swan_lake.mp3", type="audio/mpeg">
-        </audio>
-        Ours:
-        <audio controls>
-        <source src="static/long_samples/aranjuez_midi.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div>
-    <div> -->
-
-    <br>
+    <!-- end end button -->
 
 
 
@@ -755,7 +807,7 @@
         <source src="static/long_samples/pastoral_p5_coriolan.mp3", type="audio/mpeg">
         </audio>
         </small></small>
-          <!-- <small><small>MIDI: <b>Concerto Aranjuez</b>
+          <small><small>MIDI: <b>Concerto Aranjuez</b>
           <br>Performance Condition: <b>Richard Bonynge & National<br>
             Phil. Orchestra playing Tchaikovsky's Swan Lake</b>
           <br>
