@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Performance-Aware Multi-Instrument Synthesis using Conditional Diffusion Models</title>
+  <title>Academic Project Page</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -319,23 +319,24 @@
 
     <div class="columns is-centered">
       <div class="column">
-          <small><small>MIDI: <b>Mozart String Quartet</b>
-          <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
-          <br>
-          Input MIDI:<br>
-          <audio id="mozart_string_quartet_beethoven_piano_trios_MIDI" controls>
-          <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("mozart_string_quartet_beethoven_piano_trios_MIDI");
-          audio.volume = 0.5;
-          </script>
-          <br>Ours:<br>
-          <audio controls>
-          <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
+        <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
+        <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
+        <br>
+        Input MIDI:<br>
+        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
+        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
+        audio.volume = 0.5;
+        </script>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
       </div>
+
 
       <div class="column">
           <small><small>MIDI: <b>Bach 3rd English Suite Prelude</b>
@@ -430,6 +431,25 @@
 
     <div class="columns is-centered">
       <div class="column">
+          <small><small>MIDI: <b>Mozart String Quartet</b>
+          <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
+          <br>
+          Input MIDI:<br>
+          <audio id="mozart_string_quartet_beethoven_piano_trios_MIDI" controls>
+          <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("mozart_string_quartet_beethoven_piano_trios_MIDI");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/mozart_string_quartet_beethoven_piano_trios.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <div class="column">
           <small><small>MIDI: <b>Gershwin's Rhapsody in Blue</b>
           <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
           <br>
@@ -444,24 +464,6 @@
           </small></small>
       </div>
 
-      <div class="column">
-        <small><small>MIDI: <b>Brahms 5th Hungarian Dance</b>
-        <br>Performance Condition: <b><span style="color:Sienna">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
-        <br>
-        Input MIDI:<br>
-        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
-        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios_MIDI.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
-        audio.volume = 0.5;
-        </script>
-        <br>Ours:<br>
-        <audio controls>
-        <source src="static/long_samples/brahms_hungarian_dance_beethoven_piano_trios.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div>
 
       <div class="column">
           <small><small>MIDI: <b>Jobim's Felicidad</b>
@@ -510,12 +512,6 @@
 
 
 
-
-  <!-- </div>
-</section> -->
-
-<!-- <section class="section">
-  <div class="container is-widescreen"> -->
     <h2 class="title is-3">Performance Conditioning Effect</h2>
     <p>
     In the following, we demonstrate the effect of performance conditioning. The exact same MIDI (including instrumentation) is synthesized with different performance conditions.
@@ -527,11 +523,6 @@
     <br>
 
     <b>Bach's 8th Invention Synthesized on 8 Different Harpsichords</b><br>
-    <!-- In this example we provide the same MIDI of  -->
-    <!-- Bach's 8th Invention synthesized on 8 different harpsichords.
-    <br> -->
-    <!-- . The input MIDI is the exact same,
-    and the different timbre is obtained using different performance conditions. For each sample, we provide a short excerpt from the conditioning performance. -->
     In the last 2 examples, the timbre of the harpsichord is extracted from a mixture with a violin.
     <br><br>
     <small><small>
@@ -646,7 +637,6 @@
 
     <b>Orchestra - Beethoven Symphony 6 (Pastoral)</b><br>
     In this example we provide the same MIDI of Beethoven's 6th symphony, synthesized with 4 different orchestras.
-    <!-- As in the previous examples, the MIDI condition is identical, while the different sound is achieved using performance conditioning. Excerpts from the conditioning performances are provided. -->
     <small><small>
     <br><br>
     Input MIDI:
@@ -654,7 +644,6 @@
     <audio controls>
     <source src="static/performance_conditioning/pastoral_midi.mp3", type="audio/mpeg">
     </audio>
-    <!-- </small></small> -->
     <br>
     <div class="columns is-centered">
       <div class="column">
@@ -681,18 +670,6 @@
 
 
 
-      <!-- <div class="column">
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_beethoven4.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Condition:
-          <br>
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_beethoven4_vocoded.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
-
 
       <div class="column">
           Performance Condition:
@@ -718,59 +695,9 @@
 
 
     </div>
-    <!-- <div class="columns is-centered">
-      <div class="column is-one-quarter">
-
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_brahms3.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Condition:
-          <br>
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_brahms3_vocoded.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
-
-      <!-- <div class="column">
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_eroica.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Condition:
-          <br>
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_eroica_vocoded.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
-
-      <!-- <div class="column">
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_mozart38.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Condition:
-          <br>
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_mozart38_vocoded.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
 
 
 
-
-
-      <!-- <div class="column">
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_scottish.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Condition:
-          <br>
-          <audio controls>
-          <source src="static/performance_conditioning/pastoral_scottish_vocoded.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
 
 
 
@@ -789,7 +716,6 @@
     <audio controls>
     <source src="static/performance_conditioning/organ_midi.mp3", type="audio/mpeg">
     </audio>
-    <!-- </small></small> -->
     <br>
     <div class="columns is-centered">
       <div class="column is-one-quarter">
@@ -826,32 +752,12 @@
     <audio controls>
     <source src="static/performance_conditioning/violin_midi.mp3", type="audio/mpeg">
     </audio>
-    <!-- </small></small> -->
     <br>
     <div class="columns is-centered">
-      <!-- <div class="column is-one-quarter">
-          <audio controls>
-          <source src="static/performance_conditioning/violin_bwv1003.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Condition:
-          <br>
-          <audio controls>
-          <source src="static/performance_conditioning/violin_bwv1003_vocoded.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
+
 
       <div class="column is-one-quarter">
-          <!-- <audio controls>
-          <source src="static/performance_conditioning/violin_trios.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Condition (mixture):
-          <br>
-          <audio controls>
-          <source src="static/performance_conditioning/violin_trios_vocoded.mp3", type="audio/mpeg">
-          </audio> -->
-          <!-- <br><br> -->
+
           Performance Condition (mixture with piano):
           <audio controls>
           <source src="static/performance_conditioning/violin_vs_vocoded.mp3", type="audio/mpeg">
@@ -874,9 +780,6 @@
       </div>
 
       <div class="column is-one-quarter">
-          <!-- <br>
-          Synthesized:
-          <br> -->
           Performance Condition (mixture with harpsichord):
           <audio controls>
           <source src="static/performance_conditioning/violin_vhA_vocoded.mp3", type="audio/mpeg">
@@ -885,7 +788,6 @@
           <audio controls>
           <source src="static/performance_conditioning/violin_vhA.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
 
 
 
@@ -901,7 +803,6 @@
         <audio controls>
         <source src="static/performance_conditioning/violin_bwv1004.mp3", type="audio/mpeg">
         </audio>
-        <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
       </div>
 
     </div>
@@ -926,7 +827,6 @@
           <audio controls>
           <source src="static/performance_conditioning/guitar_17sor29.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condition - Beethoven Piano Trios: -->
       </div>
 
       <div class="column is-one-quarter">
@@ -938,8 +838,6 @@
           <audio controls>
           <source src="static/performance_conditioning/guitar_2419sor31.mp3", type="audio/mpeg">
           </audio>
-          <!-- <br> -->
-          <!-- Condition - Bach Violin & Harpsichord Sonatas B: -->
 
       </div>
 
@@ -952,7 +850,6 @@
           <audio controls>
           <source src="static/performance_conditioning/guitar_1201sor6.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condiion - Bach Violin & Harpsichord Sonatas A: -->
       </div>
 
 
@@ -979,7 +876,6 @@
           <audio controls>
           <source src="static/performance_conditioning/concerto12_3_trios.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condition - Beethoven Piano Trios: -->
       </div>
 
       <div class="column is-one-quarter">
@@ -996,20 +892,9 @@
           <audio controls>
           <source src="static/performance_conditioning/concerto12_3_bach_violin_sonatas.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condition - Bach Violin & Harpsichord Sonatas A: -->
       </div>
 
-      <!-- <div class="column is-one-quarter">
-          <audio controls>
-          <source src="static/performance_conditioning/concerto1.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Condition (Violin & Harpsichord):
-          <br>
-          <audio controls>
-          <source src="static/performance_conditioning/concerto1_target_vocoded.mp3", type="audio/mpeg">
-          </audio>
-      </div> -->
+
     </div>
     </small></small>
 
@@ -1023,10 +908,7 @@
     (1) Data - We train on real data alone (~58 hours), including orchestral symphonies, while Hawthorne et al. train on mainly synthetic data (~1500 hours).
     <br>
     (2) We incorporate performance conditioning.
-    <!-- <br>
-    Provided here are samples for comparison. Notice how significantly more realistic timbre and sound are obtained in all samples.
-    <br>
-    Notice that our performance conditioning prevents timbre drift (3rd sample). -->
+
     </p>
     <br>
     <small><small>
@@ -1042,11 +924,9 @@
           <br>
           Hawthorne et al. (flat timbre):
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/compare/pastoral1_hawthorne.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condition - Beethoven Piano Trios: -->
           <br>
           Ours Performance Condition I:
           <br>
@@ -1065,18 +945,15 @@
           <br>
           Input MIDI:
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/compare/pastoral2_midi.mp3", type="audio/mpeg">
           </audio>
           <br>
           Hawthorne et al. (flat timbre):
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/compare/pastoral2_hawthorne.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condition - Beethoven Piano Trios: -->
           <br>
           Ours Performance Condition I:
           <br>
@@ -1088,7 +965,6 @@
           <br>
           <audio controls>
           <source src="static/compare/pastoral2_ours_egmont.mp3", type="audio/mpeg">
-          <!-- <source src="static/compare/pastoral2_ours_mozart36.mp3", type="audio/mpeg"> -->
           </audio>
       </div>
 
@@ -1096,18 +972,15 @@
           <br>
           Input MIDI:
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/compare/toccata_midi.mp3", type="audio/mpeg">
           </audio>
           <br>
           Hawthorne et al. (flat timbre, timbre drift):
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/compare/toccata_hawthorne.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condition - Beethoven Piano Trios: -->
           <br>
           Ours Performance Condition I:
           <br>
@@ -1126,23 +999,19 @@
           <br>
           Input MIDI:
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/compare/italian_midi.mp3", type="audio/mpeg">
           </audio>
           <br>
           Hawthorne et al:
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/compare/italian_hawthorne.mp3", type="audio/mpeg">
           </audio>
-          <!-- Condition - Beethoven Piano Trios: -->
           <br>
           Ours Performance Condition I:
           <br>
           <audio controls>
-          <!-- <source src="static/compare/italian_ours_goldberg.mp3", type="audio/mpeg"> -->
           <source src="static/compare/italian_ours_wtc2.mp3", type="audio/mpeg">
 
           </audio>
@@ -1182,7 +1051,6 @@
           <br>
           Soundstream vocoder:
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/vocoder/Brahms_SymphonyNo.3inFMajor_target_soundstream.flac", type="audio/mpeg">
           </audio>
@@ -1199,7 +1067,6 @@
           <br>
           Soundstream vocoder:
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/vocoder/harpsichord_violin_target_soundstream.mp3", type="audio/mpeg">
           </audio>
@@ -1214,7 +1081,6 @@
           <br>
           Soundstream vocoder:
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/vocoder/Beethoven_SymphonyNo.3Eroica_target_soundstream.flac", type="audio/mpeg">
           </audio>
@@ -1229,7 +1095,6 @@
           <br>
           Soundstream vocoder:
           <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
           <audio controls>
           <source src="static/vocoder/guitar_target_soundstream.mp3", type="audio/mpeg">
           </audio>
