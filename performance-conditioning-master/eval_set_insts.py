@@ -1,0 +1,31 @@
+
+instrument_map = [0, 6, 9, 19, 24, 40, 41, 42, 45, 46, 47, 48, 52, 56, 60, 68, 70, 71, 73]  # train_diff_mel_large extended
+conversion_map = {i: i for i in range(128)}
+conversion_map[13] = 9
+conversion_map[44] = 48
+conversion_map[49] = 48
+conversion_map[50] = 48
+conversion_map[51] = 48
+conversion_map[72] = 73
+conversion_map[57] = 56
+conversion_map[58] = 56
+conversion_map[59] = 56
+conversion_map[61] = 56
+conversion_map[49] = 48
+conversion_map[50] = 48
+conversion_map[72] = 73
+conversion_map[74] = 73
+conversion_map[79] = 73
+conversion_map[57] = 56
+conversion_map[58] = 56
+conversion_map[61] = 56
+conversion_map[64] = 56
+conversion_map[20] = 19
+conversion_map[53] = 52
+conversion_map[43] = 42
+conversion_map[54] = 52
+conversion_map[65] = 56
+conversion_map[69] = 70
+conversion_map[110] = 40
+conversion_map[66] = 56
+conversion_map.update({elem: 9 for elem in [8, 10, 14]})
